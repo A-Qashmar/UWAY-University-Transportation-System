@@ -1,0 +1,399 @@
+:root {
+    --uway-bg: #1f1033;
+    --uway-bg-soft: #281542;
+    --uway-bg-sidebar: #2d164a;
+    --uway-card: #ffffff;
+    --uway-border-soft: #e4e0f0;
+
+    --uway-purple: #5a26a8;
+    --uway-purple-dark: #421a7d;
+    --uway-purple-soft: #6d3ad2;
+
+    --uway-gold: #e3c26b;
+    --uway-gold-light: #f2e3b3;
+
+    --uway-text-main: #222222;
+    --uway-text-muted: #777777;
+    --uway-text-light: #f4f4f4;
+
+    --uway-radius: 10px;
+    --uway-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    --uway-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(circle at top left, #4e2a8e, #1f1033 55%);
+    color: var(--uway-text-main);
+    min-height: 100vh;
+}
+
+a {
+    color: var(--uway-purple);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.success {
+    color: #2d8a3a;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.error {
+    color: #c0392b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* LOGIN PAGE */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: var(--uway-shadow);
+    padding: 35px 30px 30px;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.login-logo img {
+    width: 90px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.login-logo-title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: linear-gradient(120deg, var(--uway-gold), var(--uway-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: var(--uway-text-muted);
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.login-card form p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.login-card label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--uway-text-muted);
+    font-size: 13px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s border, 0.2s box-shadow;
+}
+
+.login-input:focus {
+    border-color: var(--uway-purple);
+    box-shadow: 0 0 0 2px rgba(90, 38, 168, 0.15);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 999px;
+    border: none;
+    margin-top: 10px;
+    background: linear-gradient(120deg, var(--uway-purple-dark), var(--uway-purple-soft));
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s transform, 0.2s box-shadow, 0.2s opacity;
+}
+.login-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--uway-shadow-soft);
+    opacity: 0.96;
+}
+
+.login-footer {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--uway-text-muted);
+}
+
+/* TOP NAV (اختياري) */
+.top-nav {
+    background: #ffffff10;
+    backdrop-filter: blur(8px);
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.top-nav a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    transition: 0.2s background, 0.2s color;
+}
+.top-nav a:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard-layout {
+    display: flex;
+    min-height: calc(100vh - 40px);
+}
+
+.sidebar {
+    width: 230px;
+    background: linear-gradient(180deg, #311450, #1f1033);
+    padding: 22px 18px;
+    color: var(--uway-text-light);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-logo {
+    text-align: center;
+}
+.sidebar-logo img {
+    width: 60px;
+    margin-bottom: 6px;
+}
+.sidebar-logo-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(120deg, var(--uway-gold), var(--uway-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+.sidebar-menu li {
+    margin-bottom: 5px;
+}
+.sidebar-menu a {
+    display: block;
+    color: #f2ecff;
+    padding: 9px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: 0.2s background, 0.2s transform;
+}
+.sidebar-menu a:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateX(2px);
+}
+.sidebar-menu a.active {
+    background: linear-gradient(120deg, var(--uway-gold), var(--uway-gold-light));
+    color: #3a205f;
+    font-weight: 600;
+}
+
+.sidebar-user {
+    margin-top: auto;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.main-content {
+    flex: 1;
+    padding: 22px 26px 30px;
+    background: #f4f5fb;
+    overflow-x: auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.main-header-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #3b205f;
+}
+.main-header-right {
+    font-size: 13px;
+    color: var(--uway-text-muted);
+}
+
+/* CARDS */
+.uway-card {
+    background: var(--uway-card);
+    border-radius: var(--uway-radius);
+    padding: 18px 18px 16px;
+    box-shadow: var(--uway-shadow-soft);
+    margin-bottom: 18px;
+}
+
+.uway-card h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #3b205f;
+}
+
+.card-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* FORMS INSIDE DASHBOARD */
+.uway-form {
+    background: var(--uway-card);
+    padding: 18px 18px 10px;
+    border-radius: var(--uway-radius);
+    box-shadow: var(--uway-shadow-soft);
+    margin-bottom: 18px;
+    max-width: 520px;
+}
+
+.uway-form p {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.uway-form label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--uway-text-muted);
+    font-size: 13px;
+}
+
+.uway-input,
+.uway-select {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 6px;
+    border: 1px solid #d6cfee;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s border, 0.2s box-shadow;
+}
+.uway-input:focus,
+.uway-select:focus {
+    border-color: var(--uway-purple);
+    box-shadow: 0 0 0 2px rgba(90, 38, 168, 0.16);
+}
+
+/* TABLES */
+.uway-table-wrapper {
+    background: var(--uway-card);
+    padding: 16px 16px 10px;
+    border-radius: var(--uway-radius);
+    box-shadow: var(--uway-shadow-soft);
+    margin-top: 10px;
+}
+
+.uway-table-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3b205f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th, td {
+    padding: 9px 8px;
+    border-bottom: 1px solid var(--uway-border-soft);
+    text-align: left;
+}
+
+th {
+    background: #f3f1fb;
+    color: #4b2f7f;
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background: #faf9ff;
+}
+
+/* BUTTONS */
+.btn-primary,
+input[type="submit"],
+button {
+    background: linear-gradient(120deg, var(--uway-purple-dark), var(--uway-purple-soft));
+    color: #ffffff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.2s transform, 0.2s box-shadow, 0.2s opacity;
+}
+.btn-primary:hover,
+input[type="submit"]:hover,
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--uway-shadow-soft);
+    opacity: 0.95;
+}
+
+/* SEAT MAP */
+.seat-map {
+    background: var(--uway-card);
+    border-radius: var(--uway-radius);
+    box-shadow: var(--uway-shadow-soft);
+    padding: 12px;
+    text-align: center;
+    margin-left: 18px;
+}
+.seat-map img {
+    max-width: 340px;
+    border-radius: 10px;
+}
+
+/* UTILITIES */
+.mt-2 { margin-top: 12px; }
+.mt-3 { margin-top: 18px; }
+
+.text-right { text-align: right; }
+.text-center { text-align: center; }
