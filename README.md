@@ -19,7 +19,7 @@ A web-based university transportation system supporting three user roles: Admin,
 ## Project Details
 - **Duration:** Fall 2025
 - **Team Size:** 4 members
-- **My Role:** Frontend and Backend Development
+- **My Role:** Frontend and Backend Development for Admin dashboard
 
 ## What I Learned
 - Building responsive admin dashboards
