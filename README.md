@@ -29,12 +29,78 @@ A web-based university transportation system supporting three user roles: Admin,
 - Team collaboration using Git
 
 ## How to Run
-1. Clone this repository
-2. Set up a local PHP server
-3. Create a MySQL database
-4. Import the database schema
-5. Update database credentials in config file
-6. Open in browser at localhost
+2. Installation Instructions (XAMPP/WAMP)
+A. Extract Project
+
+Copy the extracted folder to:
+C:\xampp\htdocs\UWAY
+(or your WAMP server www folder)
+
+B. Start Local Server
+
+Open XAMPP Control Panel
+
+Start:
+
+Apache
+
+MySQL
+
+3. Database Setup
+A. Import Database
+
+Open browser → go to:
+http://localhost/phpmyadmin
+
+Click on Import
+
+Choose the file:
+UWAY.sql
+
+Click Go
+
+This will automatically create:
+
+Database: UWAY
+
+All required tables
+
+All sample data
+
+All admin/driver/student accounts
+
+4. Running the System
+
+Open browser and enter:
+
+http://localhost/UWAY/login.html
+
+Login Accounts Included:
+Admins
+
+Email: admin1@uway.com – Password: A1
+
+Email: admin2@uway.com – Password: A2
+
+Drivers
+
+Email: driver1@uway.com – Password: D1
+
+Email: driver2@uway.com – Password: D2
+
+Email: driver3@uway.com – Password: D3
+
+Students
+
+Email: U22200508@sharjah.ac.ae – Password: 508
+
+Email: U22200519@sharjah.ac.ae – Password: 519
+
+Email: U22200529@sharjah.ac.ae – Password: 529
+
+Email: U21200816@sharjah.ac.ae – Password: 816
+
+
 
 ## Contact
 - **Email:** abdulqashmar@gmail.com
