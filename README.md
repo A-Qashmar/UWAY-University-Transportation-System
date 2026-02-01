@@ -17,7 +17,7 @@ A web-based university transportation system supporting three user roles: Admin,
 - **Tools:** Git, GitHub, VS Code
 
 ## Project Details
-- **Duration:** Fall 2025
+- **Duration:** Fall 2025 - Development of Web Applications Course
 - **Team Size:** 4 members
 - **My Role:** Frontend and Backend Development for Admin dashboard
 
